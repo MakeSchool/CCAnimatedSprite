@@ -9,8 +9,11 @@
 
 #import "HelloWorldScene.h"
 #import "Knight.h"
+#import "CCAnimatedSprite.h"
 
-@implementation HelloWorldScene
+@implementation HelloWorldScene {
+    CCAnimatedSprite *animatedSprite;
+}
 
 
 + (HelloWorldScene *)scene
@@ -23,13 +26,64 @@
     if (self = [super init])
     {
         glClearColor(0.2f, 0.2f, 0.2f, 1.f);
+        
+        // ************* CREATE MENU ********************
+        
+        CCButton *runAnimationButton = [CCButton buttonWithTitle:@"'Run'"];
+        [runAnimationButton setTarget:self selector:@selector(runAnimationButtonTouched)];
+        
+        CCButton *stabAnimationButton = [CCButton buttonWithTitle:@"'Stab'"];
+        [stabAnimationButton setTarget:self selector:@selector(stabAnimationButtonTouched)];
+        
+        CCButton *stopAnimationButton = [CCButton buttonWithTitle:@"Stop"];
+        [stopAnimationButton setTarget:self selector:@selector(stopAnimationButtonTouched)];
+        
+        CCButton *customFrameButton = [CCButton buttonWithTitle:@"Custom frame"];
+        [customFrameButton setTarget:self selector:@selector(customFrameButtonTouched)];
+        
+        CCLayoutBox *layoutBox = [[CCLayoutBox alloc] init];
+        layoutBox.anchorPoint = ccp(0.5f, 0.5f);
+        [layoutBox addChild:runAnimationButton];
+        [layoutBox addChild:stabAnimationButton];
+        [layoutBox addChild:stopAnimationButton];
+        [layoutBox addChild:customFrameButton];
 
-        Knight *knight = [[Knight alloc] initKnight];
-        knight.positionType = CCPositionTypeNormalized;
-        knight.position = ccp(0.5f, 0.5f);
-        [self addChild:knight];
+        layoutBox.spacing = 10.f;
+        layoutBox.direction = CCLayoutBoxDirectionHorizontal;
+        [layoutBox layout];
+        layoutBox.positionType = CCPositionTypeNormalized;
+
+        layoutBox.position = ccp(0.5f, 0.2f);
+        [self addChild:layoutBox];
+        
+        // ************* CREATE ANIMATION ********************
+        
+        animatedSprite = [CCAnimatedSprite animatedSpriteWithPlist:@"animation_knight.plist"];
+        [animatedSprite addAnimationwithDelayBetweenFrames:0.1f name:@"animation_knight"];
+        [animatedSprite addAnimationwithDelayBetweenFrames:0.1f name:@"animation_knight-stab"];
+        animatedSprite.positionType = CCPositionTypeNormalized;
+        animatedSprite.position = ccp(0.5f, 0.5f);
+        [animatedSprite runAnimation:@"animation_knight"];
+        [self addChild:animatedSprite];
     }
+    
 	return self;
+}
+
+- (void)runAnimationButtonTouched {
+    [animatedSprite runAnimation:@"animation_knight"];
+}
+
+- (void)stabAnimationButtonTouched {
+    [animatedSprite runAnimation:@"animation_knight-stab"];
+}
+
+- (void)stopAnimationButtonTouched {
+    [animatedSprite stopAnimation];
+}
+
+- (void)customFrameButtonTouched {
+    [animatedSprite setFrame:@"animation_knight-1.png"];
 }
 
 @end

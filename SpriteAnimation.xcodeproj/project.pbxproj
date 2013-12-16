@@ -206,6 +206,7 @@
 		62FB13F5185F637B00F981AE /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FB13F4185F637B00F981AE /* Knight.m */; };
 		62FB13F8185F678000F981AE /* animation_knight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62FB13F6185F678000F981AE /* animation_knight.plist */; };
 		62FB13F9185F678000F981AE /* animation_knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 62FB13F7185F678000F981AE /* animation_knight.png */; };
+		62FB13FC185F68AB00F981AE /* CCAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FB13FB185F68AB00F981AE /* CCAnimatedSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -630,6 +631,8 @@
 		62FB13F4185F637B00F981AE /* Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Knight.m; path = Classes/Knight.m; sourceTree = "<group>"; };
 		62FB13F6185F678000F981AE /* animation_knight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = animation_knight.plist; path = Resources/animation_knight.plist; sourceTree = "<group>"; };
 		62FB13F7185F678000F981AE /* animation_knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = animation_knight.png; path = Resources/animation_knight.png; sourceTree = "<group>"; };
+		62FB13FA185F68AB00F981AE /* CCAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAnimatedSprite.h; path = Classes/CCAnimatedSprite.h; sourceTree = "<group>"; };
+		62FB13FB185F68AB00F981AE /* CCAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCAnimatedSprite.m; path = Classes/CCAnimatedSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1507,6 +1510,8 @@
 				62FB13EC185F62BE00F981AE /* HelloWorldScene.m */,
 				62FB13F3185F637B00F981AE /* Knight.h */,
 				62FB13F4185F637B00F981AE /* Knight.m */,
+				62FB13FA185F68AB00F981AE /* CCAnimatedSprite.h */,
+				62FB13FB185F68AB00F981AE /* CCAnimatedSprite.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1745,6 +1750,7 @@
 				62FB131B185F62BD00F981AE /* OALTools.m in Sources */,
 				62FB137A185F62BD00F981AE /* CCBLocalizationManager.m in Sources */,
 				62FB1207185F62BB00F981AE /* CCParticleSystem.m in Sources */,
+				62FB13FC185F68AB00F981AE /* CCAnimatedSprite.m in Sources */,
 				62FB1334185F62BD00F981AE /* CCTextField.m in Sources */,
 				62FB12F5185F62BC00F981AE /* ALSoundSourcePool.m in Sources */,
 				62FB134A185F62BD00F981AE /* aabb.c in Sources */,

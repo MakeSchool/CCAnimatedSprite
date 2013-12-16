@@ -12,7 +12,7 @@
 
 static BOOL spriteFramesInitialized;
 
-- (void)initializeSpriteFrames {
++ (void)initializeSpriteFrames {
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"animation_knight.plist"];
     
     spriteFramesInitialized = TRUE;
@@ -20,7 +20,7 @@ static BOOL spriteFramesInitialized;
 
 - (id)initKnight {
     if (!spriteFramesInitialized) {
-        [self initializeSpriteFrames];
+        [Knight initializeSpriteFrames];
     }
     
     CCSpriteFrame *initialSpriteFrame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"animation_knight-1.png"];
