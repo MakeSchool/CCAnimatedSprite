@@ -1,4 +1,4 @@
-##### Note: This is a cocos2d 3.0 class and demo project. It is not compatible with cococ2d 2.x.
+##### Note: This is a cocos2d 3.0 class and demo project. It is not compatible with cococ2d 2.x. We have a Kobold2D version on branch "kobold2d-2.x-branch"
 
 
 
