@@ -106,4 +106,8 @@ static NSMutableArray *chachedSprites;
     [self setSpriteFrame:spriteFrame];
 }
 
+- (CCActionAnimate*)animationByName:(NSString*)animationName {
+    return self.animations[animationName];
+}
+
 @end

@@ -41,12 +41,16 @@
         CCButton *customFrameButton = [CCButton buttonWithTitle:@"Custom frame"];
         [customFrameButton setTarget:self selector:@selector(customFrameButtonTouched)];
         
+        CCButton *manualAnimationButton = [CCButton buttonWithTitle:@"Manual animation"];
+        [manualAnimationButton setTarget:self selector:@selector(manualAnimationButtonTouched)];
+        
         CCLayoutBox *layoutBox = [[CCLayoutBox alloc] init];
         layoutBox.anchorPoint = ccp(0.5f, 0.5f);
         [layoutBox addChild:runAnimationButton];
         [layoutBox addChild:stabAnimationButton];
         [layoutBox addChild:stopAnimationButton];
         [layoutBox addChild:customFrameButton];
+        [layoutBox addChild:manualAnimationButton];
 
         layoutBox.spacing = 10.f;
         layoutBox.direction = CCLayoutBoxDirectionHorizontal;
@@ -84,6 +88,17 @@
 
 - (void)customFrameButtonTouched {
     [animatedSprite setFrame:@"animation_knight-1.png"];
+}
+
+- (void)manualAnimationButtonTouched {
+    // load the animation
+    CCActionAnimate *animation = [animatedSprite animationByName:@"animation_knight"];
+    
+    // stop any current animation
+    [animatedSprite stopAnimation];
+    
+    // run loaded animation once
+    [animatedSprite runAction:animation];
 }
 
 @end
