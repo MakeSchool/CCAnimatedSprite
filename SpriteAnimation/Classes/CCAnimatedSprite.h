@@ -21,7 +21,7 @@
  Creates an animation.
  
  @param delay the amount of seconds each frame shall be presented before switching to the next animation frame
- @param name name of the animation. Needs to correspond to the frame names in the plist-File. This name is used to reference the animation in other methods.
+ @param name name of the animation. This name is used to reference the animation in other methods. It needs to correspond to the frame names in the plist-File.  If the animation is called "animation_knight" your frames in the .plist need to be called "animation_knight-1.png", "animation_knight-2.png" and so forth.
  */
 - (void)addAnimationwithDelayBetweenFrames:(float)delay name:(NSString *)animationName;
 
