@@ -4,7 +4,7 @@
 
 # CCAnimatedSprite
 
-This class provides a simple way of animating Sprites in cocos2d 3.0.
+This CCSprite subclass provides a simple way of animating Sprites in cocos2d 3.0.
 
 ## Usage
 
