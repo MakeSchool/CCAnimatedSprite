@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>animation_knight-1.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{2, 6}, {104, 92}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, -3}</string>
+			<key>spriteSize</key>
+			<string>{104, 92}</string>
+			<key>spriteSourceSize</key>
+			<string>{110, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{112, 94}, {104, 92}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>animation_knight-2.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{6, 0}, {88, 98}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, -0}</string>
+			<key>spriteSize</key>
+			<string>{88, 98}</string>
+			<key>spriteSourceSize</key>
+			<string>{110, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 100}, {98, 88}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		
+		<key>animation_knight-3.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{10, 0}, {50, 98}}</string>
+			<key>spriteOffset</key>
+			<string>{-20, -0}</string>
+			<key>spriteSize</key>
+			<string>{50, 98}</string>
+			<key>spriteSourceSize</key>
+			<string>{110, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 190}, {98, 50}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		
+		<key>animation_knight-4.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{8, 2}, {60, 96}}</string>
+			<key>spriteOffset</key>
+			<string>{-17, -1}</string>
+			<key>spriteSize</key>
+			<string>{60, 96}</string>
+			<key>spriteSourceSize</key>
+			<string>{110, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{100, 188}, {96, 60}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		
+		<key>animation_knight-stab-1.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{2, 6}, {104, 92}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, -3}</string>
+			<key>spriteSize</key>
+			<string>{104, 92}</string>
+			<key>spriteSourceSize</key>
+			<string>{110, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{112, 0}, {104, 92}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>animation_knight-stab-2.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {110, 98}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{110, 98}</string>
+			<key>spriteSourceSize</key>
+			<string>{110, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {110, 98}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.6.0</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{256, 256}</string>
+		<key>name</key>
+		<string>Untitled</string>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>animation_knight</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>animation_knight</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>
