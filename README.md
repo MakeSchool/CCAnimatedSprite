@@ -1,5 +1,4 @@
-##### Note: This is a cocos2d 3.0 class and demo project. It is not compatible with cococ2d 2.x.
-
+##### Note: This is the Kobold2D 2.x version. The cocos 2d 3.0 version lives on branch 'master'
 
 
 # CCAnimatedSprite
@@ -42,7 +41,4 @@ If you for any reason need to perform animations manually, for example if you wa
     
     // load the animation
     CCAnimate *animation = [animatedSprite animationByName:@"animation_knight"];
-    
-## Sample Project
-You can simply download this example project to see all the described functionality in action.
-![image](CCAnimatedSprite.png)
+
