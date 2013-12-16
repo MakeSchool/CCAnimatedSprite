@@ -17,7 +17,9 @@ Provide a .plist file generated either *Texture Packer* or *zwoptex*.
 ####Creating animations:
 Select a duration for presenting each of the animation frames and provide an animation name. 
 This animation name needs to correspond to the names in your plist. If the animation is called 
-*animation_knight* your frames in the .plist need to be called *animation_knight-1.png*, *animation_knight-2.png* and so forth.
+*animation_knight* your frames in the .plist need to be called *animation_knight-1.png*, *animation_knight-2.png* and so forth:
+
+![image](AnimationNames.png)
 
 	[animatedSprite addAnimationwithDelayBetweenFrames:0.1f name:@"animation_knight"];
 ####Run animations:
