@@ -107,7 +107,7 @@ static NSMutableArray *chachedSprites;
     [self setTextureRect:spriteFrame.rect];
 }
 
-- (CCAnimate*)animationByName:(NSString*)animationName {
+- (CCAnimate *)animationByName:(NSString*)animationName {
     return self.animations[animationName];
 }
 

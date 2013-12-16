@@ -41,13 +41,7 @@ Manually sets a frame. Does not stop any running animation. The image name needs
 If you for any reason need to perform animations manually, for example if you want to run an animation only once instead of looping it, you can use *animationByName* to access the CCActionAnimate objects for each animation:
     
     // load the animation
-    CCActionAnimate *animation = [animatedSprite animationByName:@"animation_knight"];
-    
-    // stop any current animation
-    [animatedSprite stopAnimation];
-    
-    // run loaded animation once
-    [animatedSprite runAction:animation];
+    CCAnimate *animation = [animatedSprite animationByName:@"animation_knight"];
     
 ## Sample Project
 You can simply download this example project to see all the described functionality in action.

@@ -51,6 +51,6 @@
  @param animationName this name is used to reference an animation that has been created earlier
  @return returns the animation action with the corresponding name
  */
-- (CCAnimation*)animationByName:(NSString*)animationName;
+- (CCAnimate*)animationByName:(NSString*)animationName;
 
 @end

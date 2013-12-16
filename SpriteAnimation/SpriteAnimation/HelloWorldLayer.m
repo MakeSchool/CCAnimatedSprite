@@ -48,9 +48,13 @@
         CCAnimatedSprite *animatedSprite = [CCAnimatedSprite animatedSpriteWithPlist:@"animation_knight.plist"];
         [animatedSprite setFrame:@"animation_knight-1.png"];
         [animatedSprite addAnimationwithDelayBetweenFrames:0.1f name:@"animation_knight"];
-        [animatedSprite runAnimation:@"animation_knight"];
+        CCAnimate *animation = [animatedSprite animationByName:@"animation_knight"];
         animatedSprite.position = ccp( size.width /2 , size.height/2 );
 		[self addChild:animatedSprite];
+        
+        CCRepeatForever *repeatingAnimation = [CCRepeatForever actionWithAction:animation];
+
+        [animatedSprite runAction:repeatingAnimation];
 		
 		// Default font size will be 28 points.
 		[CCMenuItemFont setFontSize:28];
