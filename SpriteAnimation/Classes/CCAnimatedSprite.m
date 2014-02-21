@@ -7,6 +7,7 @@
 //
 
 #import "CCAnimatedSprite.h"
+#import "CCAnimation.h"
 
 @interface CCAnimatedSprite()
 
