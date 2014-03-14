@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 MakeGamesWithUs. All rights reserved.
 //
 
-#import "CCSprite.h"
+#import "cocos2d.h"
 
 /**
  A CCSprite subclass that simplifies the creation of animations. This class needs to be initialized with a plist containing the animation information.
